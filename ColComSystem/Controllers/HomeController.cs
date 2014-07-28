@@ -26,6 +26,7 @@ namespace ColComSystem.Controllers
         public ActionResult Index()
         {
             List<News> list=_newsRepository.All().ToList<News>();
+            string a = "test";
             ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
 
             return View();
