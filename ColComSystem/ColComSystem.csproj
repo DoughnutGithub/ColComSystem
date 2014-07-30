@@ -218,9 +218,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\css\documents.css" />
-    <Content Include="Content\css\index.css" />
-    <Content Include="Content\css\reset.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -278,23 +275,6 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
-    <Content Include="Images\img\artical.jpg" />
-    <Content Include="Images\img\banner.jpg" />
-    <Content Include="Images\img\banner_btn.png" />
-    <Content Include="Images\img\banner_btn2.png" />
-    <Content Include="Images\img\bg.jpg" />
-    <Content Include="Images\img\documents.jpg" />
-    <Content Include="Images\img\footer.jpg" />
-    <Content Include="Images\img\img1.jpg" />
-    <Content Include="Images\img\img2.jpg" />
-    <Content Include="Images\img\img3.jpg" />
-    <Content Include="Images\img\logo.jpg" />
-    <Content Include="Images\img\logo_icon.png" />
-    <Content Include="Images\img\menu_title.jpg" />
-    <Content Include="Images\img\PDF.jpg" />
-    <Content Include="Images\img\point.png" />
-    <Content Include="Images\img\products.jpg" />
-    <Content Include="Images\img\products_list.jpg" />
     <Content Include="Libs\Ninject.dll" />
     <Content Include="Libs\Ninject.Web.Common.dll" />
     <Content Include="Libs\Ninject.Web.Mvc.dll" />
@@ -331,6 +311,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Images\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
