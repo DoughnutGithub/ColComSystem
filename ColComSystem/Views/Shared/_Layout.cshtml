@@ -1,49 +1,38 @@
 ﻿<!DOCTYPE html>
-<html lang="zh">
-    <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <meta charset="utf-8" />
-        <title>@ViewBag.Title - 我的 ASP.NET MVC 应用程序</title>
-        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-        <meta name="viewport" content="width=device-width" />
-        @Styles.Render("~/Content/css")
-        @Scripts.Render("~/bundles/modernizr")
-    </head>
-    <body>
-        <header>
-            <div class="content-wrapper">
-                <div class="float-left">
-                    <p class="site-title">@Html.ActionLink("将你的徽标放置在此处", "Index", "Home")</p>
-                </div>
-                <div class="float-right">
-                    <section id="login">
-                        @Html.Partial("_LoginPartial")
-                    </section>
-                    <nav>
-                        <ul id="menu">
-                            <li>@Html.ActionLink("主页", "Index", "Home")</li>
-                            <li>@Html.ActionLink("关于", "About", "Home")</li>
-                            <li>@Html.ActionLink("联系方式", "Contact", "Home")</li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </header>
-        <div id="body">
-            @RenderSection("featured", required: false)
-            <section class="content-wrapper main-content clear-fix">
-                @RenderBody()
-            </section>
-        </div>
-        <footer>
-            <div class="content-wrapper">
-                <div class="float-left">
-                    <p>&copy; @DateTime.Now.Year - 我的 ASP.NET MVC 应用程序</p>
-                </div>
-            </div>
-        </footer>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
 
-        @Scripts.Render("~/bundles/jquery")
-        @RenderSection("scripts", required: false)
-    </body>
-</html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link type="text/css" rel="stylesheet" href="/Content/css/reset.css" />
+    <link type="text/css" rel="stylesheet" href="/Content/css/index.css" />
+    <link type="text/css" rel="stylesheet" href="/Content/css/documents.css" />
+</head>
+<body>
+    <div class="pagebody">
+        <div class="main_page clearfix">
+            <div class="top clearfix">
+                <a href="" class="logo"></a>
+                <ul class="nav">
+                    <li><a href="/Management/ContactUs">Contect us</a></li>
+                    <li><a href="/Document/Documents">Documents</a></li>
+                    <li><a href="/News/News">News</a></li>
+                    <li><a href="/Product/Products">Products</a></li>
+                    <li><a href="/Home/Index">Home</a></li>
+                </ul>
+            </div>
+            
+            @RenderBody()
+        </div>
+    </div>
+    <div class="footer clearfix">
+        <b><a href="">About us</a>   |   <a href="">Service</a>   |   <a href="">Distributors</a>   |   <a href="">Ordering</a>   |   <a href="">Support</a></b>
+        <b>copyright © 2013-2016 Bioworld Technology, Inc. All rights reserved</b>
+    </div>
+</body>
